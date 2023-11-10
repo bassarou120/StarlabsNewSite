@@ -12,7 +12,6 @@ RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
     install-php-extensions mbstring pdo_mysql pdo_pgsql redis zip exif pcntl gd memcached intl bcmath  opcache redis uuid
 
 
-
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \

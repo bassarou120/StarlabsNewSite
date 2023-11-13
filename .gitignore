@@ -1,5 +1,4 @@
 /node_modules
-
 /storage/*.key
 /vendor
 .DS_Store
@@ -29,8 +28,6 @@ _ide_helper.php
 yarn.lock
 bun.lockb
 /.sass-cache
-
-public/mix-manifest.json
 
 
 /lang/*

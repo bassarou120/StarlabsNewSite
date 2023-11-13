@@ -41,11 +41,15 @@ WORKDIR /var/www/html
 ## Copy existing application directory contents to the working directory
 COPY . /var/www/html
 
+RUN chmod -R 777 /var/www/html/public
 RUN chmod -R 777 /var/www/html/storage
 RUN chmod -R 777 /var/www/html/bootstrap/cache/
 RUN chmod -R 777 /var/www/html/storage/app/
 RUN chmod -R 777 /var/www/html/storage/logs/
 RUN chmod -R 777 /var/www/html/resources/
+
+
+COPY .env.prod /var/www/html/.env
 
 RUN unzip vendor.zip
 

@@ -52,6 +52,7 @@ RUN chmod -R 777 /var/www/html/resources/
 COPY .env.prod /var/www/html/.env
 
 RUN unzip vendor.zip
+RUN unzip public.zip
 
 WORKDIR /var/www/html
 
